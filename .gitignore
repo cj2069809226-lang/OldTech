@@ -1,0 +1,50 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+MemoryCaptures/
+Recordings/
+
+# Keep Unity asset metadata
+!/[Aa]ssets/**/*.meta
+
+# Editor-generated project files
+.vs/
+.vscode/
+.idea/
+.consulo/
+ExportedObj/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+
+# Builds and local files
+crashlytics-build.properties
+*.apk
+*.aab
+*.ipa
+.DS_Store
+Thumbs.db
+
+# Local package/tool caches
+Packages/*/Library/
+Packages/*/Temp/
