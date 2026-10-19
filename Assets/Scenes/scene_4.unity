@@ -732,15 +732,15 @@ MonoBehaviour:
     blip: {fileID: 0}
   lineBackgrounds:
   - {fileID: -239189868269627594, guid: 2a3922c9945231e4983b0a3425fa9056, type: 3}
-  - {fileID: -8592428516014045525, guid: 31269105a704aa34b8714ff1f72cf202, type: 3}
+  - {fileID: -7391809670129946668, guid: c55b1b472fbaf419cace4b5dce5bd8d2, type: 3}
   - {fileID: 0}
-  - {fileID: -5343259920873876913, guid: e73fb2044a9694dcc8fe7071f9dd441b, type: 3}
+  - {fileID: 0}
   - {fileID: -8592428516014045525, guid: 31269105a704aa34b8714ff1f72cf202, type: 3}
   linePortraits:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 21300000, guid: aa24ae9b1e3a3f843910836faf18817c, type: 3}
+  - {fileID: 1481016991683885450, guid: 36f831c00478df34ca0642b19ab088a1, type: 3}
   - {fileID: 0}
   hideCharacterWhenNoPortrait: 1
   backgroundImage: {fileID: 2043619781}

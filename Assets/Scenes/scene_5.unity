@@ -267,9 +267,9 @@ MonoBehaviour:
   - {fileID: 0}
   linePortraits:
   - {fileID: 0}
-  - {fileID: -8592428516014045525, guid: 31269105a704aa34b8714ff1f72cf202, type: 3}
-  - {fileID: 21300000, guid: df5eebfbb54007d4ab66acf6cee58d49, type: 3}
-  - {fileID: 21300000, guid: df5eebfbb54007d4ab66acf6cee58d49, type: 3}
+  - {fileID: -7391809670129946668, guid: c55b1b472fbaf419cace4b5dce5bd8d2, type: 3}
+  - {fileID: -9188070801501695944, guid: 761359e4050a1244eaf545a08f650029, type: 3}
+  - {fileID: -9188070801501695944, guid: 761359e4050a1244eaf545a08f650029, type: 3}
   hideCharacterWhenNoPortrait: 1
   backgroundImage: {fileID: 1173053796}
   characterImage: {fileID: 1471393595}
