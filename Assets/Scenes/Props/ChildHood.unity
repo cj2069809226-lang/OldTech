@@ -499,8 +499,8 @@ Camera:
   m_GameObject: {fileID: 1889157989}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -614,16 +614,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playOnStart: 1
   linePortraits:
-  - {fileID: 5585777490899238358, guid: a0163b3e6416c2d48baa4df0736701a4, type: 3}
-  - {fileID: 21300000, guid: f99d578a372bfbd4cbcc2a0403007247, type: 3}
-  - {fileID: 5585777490899238358, guid: a0163b3e6416c2d48baa4df0736701a4, type: 3}
-  - {fileID: 21300000, guid: f99d578a372bfbd4cbcc2a0403007247, type: 3}
-  - {fileID: 5585777490899238358, guid: a0163b3e6416c2d48baa4df0736701a4, type: 3}
-  - {fileID: 21300000, guid: f99d578a372bfbd4cbcc2a0403007247, type: 3}
+  - {fileID: 2882724585536526018, guid: a53e097bcebcf66478bc622aa637a696, type: 3}
+  - {fileID: -5517020314014236497, guid: feff8b1bb48825947ab6d495a98efaa1, type: 3}
+  - {fileID: 2882724585536526018, guid: a53e097bcebcf66478bc622aa637a696, type: 3}
+  - {fileID: -5517020314014236497, guid: feff8b1bb48825947ab6d495a98efaa1, type: 3}
+  - {fileID: 2882724585536526018, guid: a53e097bcebcf66478bc622aa637a696, type: 3}
+  - {fileID: -5517020314014236497, guid: feff8b1bb48825947ab6d495a98efaa1, type: 3}
   hideWhenNoPortrait: 0
   flashLineIndex: 3
   flashOverlay: {fileID: 0}
   flashDuration: 0.25
+  returnSceneName: Photo
+  returnDelay: 0.2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

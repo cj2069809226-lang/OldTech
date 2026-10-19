@@ -40,14 +40,29 @@ public class CharacterWalker : MonoBehaviour
     [Tooltip("旁白正在播的时候不许走动，免得剧情里乱跑")]
     public bool blockWhileDialogue = true;
 
+    [Header("脚步")]
+    [Tooltip("Resources/sound 里的音频名，不用写后缀")]
+    public string footstepSound = "走路声";
+    public float footstepInterval = 0.5f;
+    [Range(0f, 1f)]
+    public float footstepVolume = 0.45f;
+
+    [Header("场景氛围")]
+    [Tooltip("进入场景时播放的环境音；留空则不切换")]
+    public string sceneMusic = "风声";
+
     RectTransform rect;
     bool uiMode;               // 挂在 Canvas 下面 = UI，改 anchoredPosition；否则改 transform.position
     float baseScaleX = 1f;
     float facing = -1f;        // 1 = 朝右，-1 = 朝左
     bool hasSpeedParameter;    // 动画控制器里有没有 Speed 参数（② 号菜单生成的都有）
+    float footstepTimer;
 
     void Awake()
     {
+        if (!string.IsNullOrEmpty(sceneMusic))
+            AudioManager.Instance.PlayMusic(sceneMusic);
+
         rect = (RectTransform)transform;
         uiMode = GetComponentInParent<Canvas>() != null;
         if (animator == null) animator = GetComponentInChildren<Animator>();
@@ -67,6 +82,8 @@ public class CharacterWalker : MonoBehaviour
         if (KeyInput.IsHeld(KeyCode.D) || KeyInput.IsHeld(KeyCode.RightArrow)) input += 1f;
 
         if (blockWhileDialogue && DialogueSystem.IsPlaying) input = 0f;
+
+        UpdateFootsteps(Mathf.Abs(input) > 0.01f);
 
         if (!Mathf.Approximately(input, 0f))
         {
@@ -102,6 +119,25 @@ public class CharacterWalker : MonoBehaviour
                 animator.speed = Mathf.Approximately(input, 0f) ? 0f : 1f;
             }
         }
+    }
+
+    void UpdateFootsteps(bool moving)
+    {
+        if (!moving || string.IsNullOrEmpty(footstepSound))
+        {
+            footstepTimer = 0f;
+            return;
+        }
+
+        footstepTimer -= Time.deltaTime;
+        if (footstepTimer > 0f) return;
+
+        footstepTimer = Mathf.Max(0.1f, footstepInterval);
+        AudioManager.Instance.PlaySoundRandomPitch(
+            footstepSound,
+            0.92f,
+            1.08f,
+            footstepVolume);
     }
 
     static bool HasSpeedParameter(Animator animator)

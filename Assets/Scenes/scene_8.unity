@@ -1,5 +1,266 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!212 &-8811111111111110009
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: -8811111111111110007}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5686275}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &-8811111111111110008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: -8811111111111110007}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.01, y: 0, z: 0.24}
+  m_LocalScale: {x: 0.33012, y: 0.33012, z: 0.33012}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 569027460}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &-8811111111111110007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: -8811111111111110008}
+  - component: {fileID: -8811111111111110009}
+  m_Layer: 0
+  m_Name: RedDot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &-8811111111111110006
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: -8811111111111110004}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.6313726}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &-8811111111111110005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: -8811111111111110004}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.053, y: -0.02, z: -0.16}
+  m_LocalScale: {x: 0.33012, y: 0.33012, z: 0.33012}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1696959438}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &-8811111111111110004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: -8811111111111110005}
+  - component: {fileID: -8811111111111110006}
+  m_Layer: 0
+  m_Name: RedDot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &-8811111111111110003
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: -8811111111111110001}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.34509805}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &-8811111111111110002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: -8811111111111110001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.004, y: -0.003, z: -0.28}
+  m_LocalScale: {x: 0.33012, y: 0.33012, z: 0.33012}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2056152120}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &-8811111111111110001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: -8811111111111110002}
+  - component: {fileID: -8811111111111110003}
+  m_Layer: 0
+  m_Name: RedDot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!29 &1
 OcclusionCullingSettings:
   m_ObjectHideFlags: 0
@@ -157,8 +418,8 @@ Camera:
   m_GameObject: {fileID: 20664126}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -331,7 +592,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70319932}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -418,7 +679,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204273106}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -505,7 +766,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248279262}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -584,6 +845,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 204273107}
+  - {fileID: -8811111111111110008}
   m_Father: {fileID: 1634028531}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &569027461
@@ -600,9 +862,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speaker: Me
-    text: I should goand have a look at the ancient well.
-    speed: 1
-    pitch: 1
+    text: I should go and have a look at the <b>ancient well</b>.
+    speed: 0.85
+    pitch: 0.95
     blip: {fileID: 0}
   secondLines: []
   secondOverlay: {fileID: 0}
@@ -622,7 +884,7 @@ MonoBehaviour:
           m_StringArgument: scene_9
           m_BoolArgument: 0
         m_CallState: 2
-  onlyOnce: 0
+  onlyOnce: 1
   logOnClick: 1
   worldBackground: {fileID: 0}
   uiBackground: {fileID: 0}
@@ -634,6 +896,7 @@ MonoBehaviour:
   overlayFadeIn: 0.12
   overlayFadeOut: 0.35
   hideWhileShowing: []
+  hitAreaScale: 2
 --- !u!1 &868407229
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,14 +944,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speaker: Me
-    text: A portrait covered with a red cloth. Is this the one Grandmother mentioned?
-    speed: 1
-    pitch: 1
+    text: A portrait covered with a <b>red cloth</b>. Is this the one Grandmother
+      mentioned?
+    speed: 0.95
+    pitch: 0.98
     blip: {fileID: 0}
   - speaker: Me
-    text: A thin layer of dust covers the red cloth.
-    speed: 1
-    pitch: 1
+    text: A thin layer of dust covers the <b>red cloth</b>.
+    speed: 0.85
+    pitch: 0.95
     blip: {fileID: 0}
   secondLines:
   - speaker: 
@@ -713,6 +977,7 @@ MonoBehaviour:
   overlayFadeIn: 0.12
   overlayFadeOut: 0.35
   hideWhileShowing: []
+  hitAreaScale: 2
 --- !u!212 &868407232
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -720,7 +985,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868407229}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -805,6 +1070,10 @@ MonoBehaviour:
   animator: {fileID: 0}
   artFacesLeft: 1
   blockWhileDialogue: 1
+  footstepSound: "\u8D70\u8DEF\u58F0"
+  footstepInterval: 0.5
+  footstepVolume: 0.45
+  sceneMusic: "\u98CE\u58F0"
 --- !u!95 &1062469377
 Animator:
   serializedVersion: 7
@@ -890,7 +1159,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062469375}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.03}
+  m_LocalPosition: {x: 0, y: 0, z: -4.92}
   m_LocalScale: {x: 0.84, y: 0.84, z: 0.84}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1035,29 +1304,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speaker: Me
-    text: I carefully pull the cloth away.
-    speed: 1
-    pitch: 1
+    text: I carefully <b>pull the cloth away</b>.
+    speed: 0.85
+    pitch: 0.95
     blip: {fileID: 0}
   - speaker: Me
-    text: What?
-    speed: 1
-    pitch: 1
+    text: <pause=0.3><size=120%><b>What?</b></size>
+    speed: 0.8
+    pitch: 1.05
     blip: {fileID: 0}
   - speaker: Me
-    text: There's someone behind him.
-    speed: 1
-    pitch: 1
+    text: There's <b>someone behind him</b>.
+    speed: 0.75
+    pitch: 0.9
     blip: {fileID: 0}
   - speaker: Me
-    text: A little girl?
-    speed: 1
-    pitch: 1
+    text: A <b>little girl</b>?
+    speed: 0.8
+    pitch: 1.05
     blip: {fileID: 0}
   - speaker: Me
-    text: But why does she look so familiar?
-    speed: 1
-    pitch: 1
+    text: <pause=0.25>But why does she look so <b>familiar</b>?
+    speed: 0.85
+    pitch: 0.96
     blip: {fileID: 0}
   secondLines: []
   secondOverlay: {fileID: 0}
@@ -1077,6 +1346,7 @@ MonoBehaviour:
   overlayFadeIn: 0.12
   overlayFadeOut: 0.35
   hideWhileShowing: []
+  hitAreaScale: 2
 --- !u!212 &1288451299
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1084,7 +1354,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288451296}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1255,6 +1525,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 70319933}
+  - {fileID: -8811111111111110005}
   m_Father: {fileID: 1634028531}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1696959439
@@ -1271,14 +1542,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speaker: Aside
-    text: ....An inscense burner
-    speed: 0.6
-    pitch: 1
+    text: An <b>incense</b> burner...
+    speed: 0.7
+    pitch: 0.9
     blip: {fileID: 0}
   - speaker: Me
-    text: The incense has burned down. Someone must have been here recently.
-    speed: 0.4
-    pitch: 1
+    text: The incense has <b>burned down</b>. Someone must have been here <b>recently</b>.
+    speed: 0.65
+    pitch: 0.85
     blip: {fileID: 0}
   secondLines: []
   secondOverlay: {fileID: 0}
@@ -1286,7 +1557,7 @@ MonoBehaviour:
   onInteract:
     m_PersistentCalls:
       m_Calls: []
-  onlyOnce: 0
+  onlyOnce: 1
   logOnClick: 1
   worldBackground: {fileID: 0}
   uiBackground: {fileID: 0}
@@ -1300,6 +1571,7 @@ MonoBehaviour:
   hideWhileShowing:
   - {fileID: 0}
   - {fileID: 1634028529}
+  hitAreaScale: 2
 --- !u!1 &2016622839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,6 +1636,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 248279263}
+  - {fileID: -8811111111111110002}
   m_Father: {fileID: 1634028531}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2056152121
@@ -1380,14 +1653,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - speaker: Aside
-    text: Some ancestral tables
-    speed: 0.6
-    pitch: 1
+    text: Some <b>ancestral tables</b>.
+    speed: 0.8
+    pitch: 0.92
     blip: {fileID: 0}
   - speaker: Me
-    text: Names of people I never met. Somehow, they all feel familiar.
-    speed: 0.6
-    pitch: 1
+    text: Names of people I never met. Somehow, they all feel <b>familiar</b>.
+    speed: 0.75
+    pitch: 0.9
     blip: {fileID: 0}
   secondLines: []
   secondOverlay: {fileID: 0}
@@ -1395,7 +1668,7 @@ MonoBehaviour:
   onInteract:
     m_PersistentCalls:
       m_Calls: []
-  onlyOnce: 0
+  onlyOnce: 1
   logOnClick: 1
   worldBackground: {fileID: 0}
   uiBackground: {fileID: 0}
@@ -1407,6 +1680,7 @@ MonoBehaviour:
   overlayFadeIn: 0.12
   overlayFadeOut: 0.35
   hideWhileShowing: []
+  hitAreaScale: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

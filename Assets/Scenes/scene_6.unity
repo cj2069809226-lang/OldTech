@@ -243,8 +243,8 @@ Camera:
   m_GameObject: {fileID: 1108824901}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -315,56 +315,62 @@ MonoBehaviour:
   playOnStart: 1
   lines:
   - speaker: Me
-    text: After that, I forbade her from going near the ancestral hall.
-    speed: 1
-    pitch: 1
+    text: 'After that, I <b>forbade her</b> from going near the ancestral hall.'
+    speed: 0.85
+    pitch: 0.95
     blip: {fileID: 0}
   - speaker: Me
-    text: But one day, I found her inside again.
-    speed: 1
-    pitch: 1
+    text: '<pause=0.25>But one day, I <b>found her inside</b> again.'
+    speed: 0.8
+    pitch: 0.92
     blip: {fileID: 0}
   - speaker: Me
-    text: 'She stood in front of the portrait and asked me:'
-    speed: 1
-    pitch: 1
+    text: 'She stood in front of the portrait and <b>asked me</b>:'
+    speed: 0.85
+    pitch: 0.94
     blip: {fileID: 0}
   - speaker: Little Girl
-    text: Mom, is that really me in the picture?
+    text: 'Mom, is that <b>really me</b> in the picture?'
     speed: 1
-    pitch: 1
+    pitch: 1.1
     blip: {fileID: 0}
   - speaker: Me
-    text: I was terrified.
-    speed: 1
-    pitch: 1
+    text: 'I was <b>terrified</b>.'
+    speed: 0.75
+    pitch: 0.9
     blip: {fileID: 0}
   - speaker: Me
-    text: I lost my temper.
-    speed: 1
-    pitch: 1
+    text: 'I <b>lost my temper</b>.'
+    speed: 0.82
+    pitch: 0.93
     blip: {fileID: 0}
   - speaker: Me
-    text: 'If you go near that picture again, the
-
-      dead will really come for
-      you!'
-    speed: 1
-    pitch: 1
+    text: 'If you go near that picture again, the <b>dead</b> will really <b>come for you</b>!'
+    speed: 0.95
+    pitch: 1.05
     blip: {fileID: 0}
   - speaker: Me
-    text: She ran away crying
-    speed: 1
-    pitch: 1
+    text: 'She <b>ran away crying</b>.'
+    speed: 0.82
+    pitch: 0.92
     blip: {fileID: 0}
   - speaker: Me
-    text: 'To this day, I have never forgiven myself for what
-
-      happened that
-      night.'
-    speed: 1
-    pitch: 1
+    text: '<pause=0.3>To this day, I have <b>never forgiven myself</b> for what happened that night.'
+    speed: 0.7
+    pitch: 0.88
     blip: {fileID: 0}
+  sceneMusicName: 雷雨声
+  lineSfxNames:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - 小女孩跑开声音
+  - ''
+  lineSfxVolume: 0.9
   lineBackgrounds:
   - {fileID: -7391809670129946668, guid: c55b1b472fbaf419cace4b5dce5bd8d2, type: 3}
   - {fileID: 0}
@@ -382,7 +388,7 @@ MonoBehaviour:
   hideCharacterWhenNoPortrait: 1
   backgroundImage: {fileID: 1714997866}
   characterImage: {fileID: 2139994259}
-  nextSceneName: 
+  nextSceneName: scene_7
   delayBeforeNextScene: 0.3
   onFinished:
     m_PersistentCalls:

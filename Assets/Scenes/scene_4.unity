@@ -587,8 +587,8 @@ Camera:
   m_GameObject: {fileID: 1804619180}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -703,33 +703,31 @@ MonoBehaviour:
   playOnStart: 1
   lines:
   - speaker: Aside
-    text: That day, an old man sat alone for his portrait.
-    speed: 1
-    pitch: 1
+    text: 'That day, an old man <b>sat alone</b> for his portrait.'
+    speed: 0.88
+    pitch: 0.96
     blip: {fileID: 0}
   - speaker: Aside
-    text: "\u3002But when the photograph was developed, a\r\nchild appeared behind
-      him"
-    speed: 1
-    pitch: 1
+    text: '<pause=0.3>But when the photograph was developed, a <size=116%><b>child</b></size> appeared behind him.'
+    speed: 0.8
+    pitch: 0.92
     blip: {fileID: 0}
   - speaker: Aside
-    text: Her body was almost transparent.
-    speed: 1
-    pitch: 1
+    text: 'Her body was almost <size=116%><b>transparent</b></size>.'
+    speed: 0.72
+    pitch: 0.88
     blip: {fileID: 0}
   - speaker: Aside
-    text: 'The photographer insisted there had been no
-
-      child in the frame.'
-    speed: 1
-    pitch: 1
+    text: 'The photographer insisted there had been <b>no child</b> in the frame.'
+    speed: 0.9
+    pitch: 0.95
     blip: {fileID: 0}
   - speaker: Aside
-    text: "\u3002No one believed him"
-    speed: 1
-    pitch: 1
+    text: '<pause=0.5><b>No one believed him.</b>'
+    speed: 0.8
+    pitch: 0.9
     blip: {fileID: 0}
+  sceneMusicName: 增加恐怖氛围可用
   lineBackgrounds:
   - {fileID: -239189868269627594, guid: 2a3922c9945231e4983b0a3425fa9056, type: 3}
   - {fileID: -7391809670129946668, guid: c55b1b472fbaf419cace4b5dce5bd8d2, type: 3}

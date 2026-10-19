@@ -156,8 +156,8 @@ Camera:
   m_GameObject: {fileID: 361635574}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -228,39 +228,34 @@ MonoBehaviour:
   playOnStart: 1
   lines:
   - speaker: Aside
-    text: Three months later, the old man passed away
-    speed: 1
-    pitch: 1
+    text: Three months later, the old man <b>passed away</b>.
+    speed: 0.8
+    pitch: 0.92
     blip: {fileID: 0}
   - speaker: Aside
-    text: His family placed the portrait in the ancestral hall
-    speed: 1
-    pitch: 1
+    text: His family placed the <b>portrait</b> in the ancestral hall.
+    speed: 0.88
+    pitch: 0.96
     blip: {fileID: 0}
   - speaker: Aside
-    text: 'People began to whisper that the dead
-
-      man had claimed the child''s
-      shadow'
-    speed: 1
-    pitch: 1
+    text: People began to whisper that the dead man had claimed the child's <b>shadow</b>.
+    speed: 0.75
+    pitch: 0.9
     blip: {fileID: 0}
   - speaker: Aside
-    text: 'They said he would return for her after his burial.
-
-'
-    speed: 1
-    pitch: 1
+    text: They said he would <b>return for her</b> after his burial.
+    speed: 0.8
+    pitch: 0.91
     blip: {fileID: 0}
   - speaker: Aside
     text: I didn't want to believe them.
-    speed: 1
-    pitch: 1
+    speed: 0.85
+    pitch: 0.94
     blip: {fileID: 0}
   - speaker: Aside
-    text: But I was too afraid not to
-    speed: 1
-    pitch: 1
+    text: <pause=0.3>But I was <b>too afraid</b> not to.
+    speed: 0.76
+    pitch: 0.9
     blip: {fileID: 0}
   lineBackgrounds:
   - {fileID: -5343259920873876913, guid: e73fb2044a9694dcc8fe7071f9dd441b, type: 3}
@@ -271,6 +266,9 @@ MonoBehaviour:
   - {fileID: -9188070801501695944, guid: 761359e4050a1244eaf545a08f650029, type: 3}
   - {fileID: -9188070801501695944, guid: 761359e4050a1244eaf545a08f650029, type: 3}
   hideCharacterWhenNoPortrait: 1
+  sceneMusicName: "\u96F7\u96E8\u58F0"
+  lineSfxNames: []
+  lineSfxVolume: 0.9
   backgroundImage: {fileID: 1173053796}
   characterImage: {fileID: 1471393595}
   nextSceneName: scene_6
@@ -557,7 +555,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: df5eebfbb54007d4ab66acf6cee58d49, type: 3}
+  m_Sprite: {fileID: 4263446246654506797, guid: 7310577085445e24db6e75c1d722452e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

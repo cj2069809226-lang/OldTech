@@ -424,8 +424,8 @@ Camera:
   m_GameObject: {fileID: 1235695293}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -496,27 +496,28 @@ MonoBehaviour:
   playOnStart: 1
   lines:
   - speaker: Content of the latter
-    text: '"They found her near the old well behind the hall."'
-    speed: 1
-    pitch: 1
+    text: '"They found her near the <b>old well</b> behind the hall."'
+    speed: 0.8
+    pitch: 0.92
     blip: {fileID: 0}
   - speaker: Content of the latter
-    text: '"There is something I never told anyone."'
-    speed: 1
-    pitch: 1
+    text: '"There is something I <b>never told anyone</b>."'
+    speed: 0.76
+    pitch: 0.9
     blip: {fileID: 0}
   - speaker: Content of the latter
-    text: '"If you want to know what happened, go there."'
-    speed: 1
-    pitch: 1
+    text: '"<pause=0.3>If you want to know what happened, <b>go there</b>."'
+    speed: 0.75
+    pitch: 0.88
     blip: {fileID: 0}
+  sceneMusicName: 水滴声
   lineBackgrounds:
   - {fileID: 0}
   linePortraits: []
   hideCharacterWhenNoPortrait: 1
   backgroundImage: {fileID: 0}
   characterImage: {fileID: 0}
-  nextSceneName: 
+  nextSceneName: scene_8
   delayBeforeNextScene: 0.3
   onFinished:
     m_PersistentCalls:

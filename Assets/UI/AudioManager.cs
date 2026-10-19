@@ -28,8 +28,14 @@ public class AudioManager
 
     private AudioManager() { }
 
-    const string SfxFolder = "Sounds/";
-    const string MusicFolder = "Music/";
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+    static void StartMainMelody()
+    {
+        Instance.EnsureMainMelody();
+    }
+
+    const string SfxFolder = "sound/";
+    const string MusicFolder = "sound/";
 
     private float sfxVolume = 1f;
     private float musicVolume = 0.6f;
@@ -43,6 +49,10 @@ public class AudioManager
     private AudioSource musicSource;
     private Coroutine fadeRoutine;
     private string currentMusic;
+    private AudioSource mainMelodySource;
+    private float mainMelodyVolume = 0.1f;
+
+    const string MainMelodyName = "中式恐怖主旋律";
 
     /// <summary>音效音量（0~1）。</summary>
     public float SfxVolume
@@ -59,6 +69,17 @@ public class AudioManager
         {
             musicVolume = Mathf.Clamp01(value);
             if (musicSource != null) musicSource.volume = musicVolume;
+        }
+    }
+
+    /// <summary>主旋律音量（0~1），默认 10%。</summary>
+    public float MainMelodyVolume
+    {
+        get { return mainMelodyVolume; }
+        set
+        {
+            mainMelodyVolume = Mathf.Clamp01(value);
+            if (mainMelodySource != null) mainMelodySource.volume = mainMelodyVolume;
         }
     }
 
@@ -113,6 +134,31 @@ public class AudioManager
         Music.Play();
 
         currentMusic = fileName;
+    }
+
+    /// <summary>全程循环的主旋律；切换场景不会重启。</summary>
+    public void EnsureMainMelody()
+    {
+        if (mainMelodySource != null && mainMelodySource.isPlaying) return;
+
+        AudioClip clip = LoadClip(MusicFolder, MainMelodyName);
+        if (clip == null) return;
+
+        if (mainMelodySource == null)
+        {
+            mainMelodySource = Host.AddComponent<AudioSource>();
+            mainMelodySource.playOnAwake = false;
+            mainMelodySource.loop = true;
+            mainMelodySource.spatialBlend = 0f;
+        }
+
+        mainMelodySource.clip = clip;
+        mainMelodySource.loop = true;
+        mainMelodySource.volume = mainMelodyVolume;
+        mainMelodySource.Play();
+
+        if (LogPlayback)
+            Debug.Log("[Audio] 主旋律循环播放，音量 " + mainMelodyVolume.ToString("0.00"));
     }
 
     /// <summary>淡出并停掉背景音乐。</summary>
@@ -200,13 +246,14 @@ public class AudioManager
         AudioClip clip = Resources.Load<AudioClip>(folder + fileName);
         if (clip != null) return clip;
 
-        // 放错文件夹也认一下（很多人会把音频全丢进 Sounds）
-        string otherFolder = folder == SfxFolder ? MusicFolder : SfxFolder;
-        clip = Resources.Load<AudioClip>(otherFolder + fileName);
+        // 兼容旧工程里的 Sounds/Music 目录
+        clip = Resources.Load<AudioClip>("Sounds/" + fileName);
         if (clip != null) return clip;
 
-        Debug.LogWarning("[Audio] 找不到音频：Resources/" + folder + fileName
-                         + "（也找过 " + otherFolder + "）");
+        clip = Resources.Load<AudioClip>("Music/" + fileName);
+        if (clip != null) return clip;
+
+        Debug.LogWarning("[Audio] 找不到音频：Resources/" + folder + fileName);
         return null;
     }
 }

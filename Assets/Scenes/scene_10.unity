@@ -413,8 +413,8 @@ Camera:
   m_GameObject: {fileID: 1452191782}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -529,91 +529,91 @@ MonoBehaviour:
   playOnStart: 1
   lines:
   - speaker: Grandma
-    text: It rained heavily that night.
-    speed: 1
-    pitch: 1
+    text: 'It rained <b>heavily</b> that night.'
+    speed: 0.72
+    pitch: 0.88
     blip: {fileID: 0}
   - speaker: Grandma
-    text: After she ran away, I didn't go looking for her
-    speed: 1
-    pitch: 1
+    text: 'After she ran away, I <b>didn''t go looking for her</b>.'
+    speed: 0.68
+    pitch: 0.86
     blip: {fileID: 0}
   - speaker: Grandma
-    text: 'I thought she was only upset with me. I thought
-
-      she would come
-      home.'
-    speed: 1
-    pitch: 1
+    text: 'I thought she was only upset with me.<pause=0.3> I thought she would come home.'
+    speed: 0.7
+    pitch: 0.87
     blip: {fileID: 0}
   - speaker: Grandma
-    text: But she never did
-    speed: 1
-    pitch: 1
+    text: '<pause=0.35>But she <b>never did</b>.'
+    speed: 0.65
+    pitch: 0.84
     blip: {fileID: 0}
   - speaker: Grandma
-    text: I found her in the well the next morning
-    speed: 1
-    pitch: 1
+    text: 'I found her in the <b>well</b> the next morning.'
+    speed: 0.6
+    pitch: 0.82
     blip: {fileID: 0}
   - speaker: Grandma
-    text: 'Everyone said the old man in the photograph had
-
-      taken her.'
-    speed: 1
-    pitch: 1
+    text: 'Everyone said the old man in the photograph had <b>taken her</b>.'
+    speed: 0.7
+    pitch: 0.86
     blip: {fileID: 0}
   - speaker: Grandma
-    text: I never corrected them
-    speed: 1
-    pitch: 1
+    text: 'I <b>never corrected them</b>.'
+    speed: 0.65
+    pitch: 0.84
     blip: {fileID: 0}
   - speaker: Grandma
-    text: Because I knew why she had run away that night.
-    speed: 1
-    pitch: 1
+    text: 'Because I knew why she had <b>run away</b> that night.'
+    speed: 0.68
+    pitch: 0.85
     blip: {fileID: 0}
   - speaker: Grandma
-    text: I was the one who frightened her.
-    speed: 1
-    pitch: 1
+    text: '<pause=0.3>I was the one who <b>frightened her</b>.'
+    speed: 0.62
+    pitch: 0.82
     blip: {fileID: 0}
   - speaker: Grandma
-    text: I was the one who made her believe the dead would come for her.
-    speed: 1
-    pitch: 1
+    text: 'I was the one who made her believe the <b>dead</b> would come for her.'
+    speed: 0.62
+    pitch: 0.82
     blip: {fileID: 0}
   - speaker: Grandma
-    text: 'For years, I told myself it was only an accident. '
-    speed: 1
-    pitch: 1
+    text: 'For years, I told myself it was <b>only an accident</b>.'
+    speed: 0.72
+    pitch: 0.86
     blip: {fileID: 0}
   - speaker: Grandma
-    text: But I could never forget the way she looked at me that day.
-    speed: 1
-    pitch: 1
+    text: '<pause=0.25>But I could <b>never forget</b> the way she looked at me that day.'
+    speed: 0.66
+    pitch: 0.84
     blip: {fileID: 0}
   - speaker: Me
-    text: '"Grandma..."
-
-      "You carried this with you all your life."'
-    speed: 1
-    pitch: 1
+    text: '"Grandma..."<pause=0.4> "You carried this with you <b>all your life</b>."'
+    speed: 0.8
+    pitch: 0.94
     blip: {fileID: 0}
   - speaker: Me
-    text: '"But there''s still something I don''t understand."
-
-      "How did she
-      appear in that photograph?"'
-    speed: 1
-    pitch: 1
+    text: '"But there''s still something I don''t understand."<pause=0.35> "How did she <b>appear in that photograph</b>?"'
+    speed: 0.85
+    pitch: 0.98
     blip: {fileID: 0}
+  sceneMusicName: 雷雨声
   lineBackgrounds:
   - {fileID: -3356121072021684518, guid: 461db263d26f84547b174408cc8eac7a, type: 3}
   linePortraits:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5323160314861428508, guid: 000aaf601e3f4774e99585d283fa6a07, type: 3}
+  - {fileID: 5323160314861428508, guid: 000aaf601e3f4774e99585d283fa6a07, type: 3}
+  - {fileID: 5323160314861428508, guid: 000aaf601e3f4774e99585d283fa6a07, type: 3}
+  - {fileID: 5323160314861428508, guid: 000aaf601e3f4774e99585d283fa6a07, type: 3}
+  - {fileID: 5323160314861428508, guid: 000aaf601e3f4774e99585d283fa6a07, type: 3}
+  - {fileID: 5323160314861428508, guid: 000aaf601e3f4774e99585d283fa6a07, type: 3}
+  - {fileID: 5323160314861428508, guid: 000aaf601e3f4774e99585d283fa6a07, type: 3}
+  - {fileID: 5323160314861428508, guid: 000aaf601e3f4774e99585d283fa6a07, type: 3}
+  - {fileID: 5323160314861428508, guid: 000aaf601e3f4774e99585d283fa6a07, type: 3}
+  - {fileID: 5323160314861428508, guid: 000aaf601e3f4774e99585d283fa6a07, type: 3}
+  - {fileID: 5323160314861428508, guid: 000aaf601e3f4774e99585d283fa6a07, type: 3}
+  - {fileID: 5323160314861428508, guid: 000aaf601e3f4774e99585d283fa6a07, type: 3}
   hideCharacterWhenNoPortrait: 1
   backgroundImage: {fileID: 1723616830}
   characterImage: {fileID: 16930666}

@@ -32,6 +32,15 @@ public class StorySequenceDialogue : MonoBehaviour
     [Tooltip("没有人物图时隐藏人物层；关闭则保留上一张人物")]
     public bool hideCharacterWhenNoPortrait = true;
 
+    [Header("音频")]
+    [Tooltip("进入场景时播放的环境音/音乐，留空则不切换")]
+    public string sceneMusicName;
+
+    [Tooltip("与 lines 一一对应；留空不播放")]
+    public string[] lineSfxNames;
+    [Range(0f, 1f)]
+    public float lineSfxVolume = 0.9f;
+
     [Header("场景引用")]
     public Image backgroundImage;
     public Image characterImage;
@@ -54,6 +63,9 @@ public class StorySequenceDialogue : MonoBehaviour
 
     void Start()
     {
+        if (!string.IsNullOrEmpty(sceneMusicName))
+            AudioManager.Instance.PlayMusic(sceneMusicName);
+
         if (playOnStart)
             Play();
     }
@@ -73,6 +85,7 @@ public class StorySequenceDialogue : MonoBehaviour
 
         // Show 会立即触发第 0 句的 LineStarted，所以先手动应用第 0 句
         ApplyLine(0);
+        PlayLineSfx(0);
 
         DialogueSystem.Show(lines);
         dialogue = DialogueSystem.Instance;
@@ -87,6 +100,17 @@ public class StorySequenceDialogue : MonoBehaviour
     void OnLineStarted(int index)
     {
         ApplyLine(index);
+        PlayLineSfx(index);
+    }
+
+    void PlayLineSfx(int index)
+    {
+        if (lineSfxNames == null || index < 0 || index >= lineSfxNames.Length)
+            return;
+
+        string soundName = lineSfxNames[index];
+        if (!string.IsNullOrEmpty(soundName))
+            AudioManager.Instance.PlaySound(soundName, lineSfxVolume);
     }
 
     void ApplyLine(int index)

@@ -2,6 +2,7 @@ using Kongyou.Dialogue;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class childhood : MonoBehaviour
 {
@@ -19,14 +20,18 @@ public class childhood : MonoBehaviour
     public Image flashOverlay;
     public float flashDuration = 0.25f;
 
+    [Header("回忆结束")]
+    public string returnSceneName = "Photo";
+    public float returnDelay = 0.2f;
+
     readonly DialogueLine[] lines =
     {
-        new DialogueLine("Young Me", "Mom, were you an only child?"),
-        new DialogueLine("Mother", "No. I had an older sister."),
-        new DialogueLine("Young Me", "Where is she now?"),
-        new DialogueLine("Mother", "...She died when she was little."),
-        new DialogueLine("Young Me", "Why does Grandma never talk about her?"),
-        new DialogueLine("Mother", "Some things are too painful to talk about."),
+        new DialogueLine("Young Me", "Mom, were you an <b>only child</b>?", 1f, 1.1f),
+        new DialogueLine("Mother", "No. I had an <b>older sister</b>.", 0.82f, 0.94f),
+        new DialogueLine("Young Me", "<pause=0.25>Where is she now?", 1f, 1.1f),
+        new DialogueLine("Mother", "<pause=0.4>...She <b>died</b> when she was little.", 0.65f, 0.85f),
+        new DialogueLine("Young Me", "Why does Grandma <b>never talk about her</b>?", 0.95f, 1.05f),
+        new DialogueLine("Mother", "Some things are <b>too painful</b> to talk about.", 0.7f, 0.88f),
     };
 
     bool playing;
@@ -41,6 +46,8 @@ public class childhood : MonoBehaviour
     {
         if (playing) return;
         playing = true;
+
+        AudioManager.Instance.PlayMusic("雷雨声");
 
         // Show 会立刻触发第 0 句的 LineStarted，所以先手动设置第 0 张
         ApplyPortrait(0);
@@ -72,6 +79,23 @@ public class childhood : MonoBehaviour
             dialogue.LineStarted -= OnLineStarted;
             dialogue.Ended -= OnEnded;
         }
+
+        if (!string.IsNullOrEmpty(returnSceneName))
+            StartCoroutine(ReturnToScene());
+    }
+
+    IEnumerator ReturnToScene()
+    {
+        if (returnDelay > 0f)
+            yield return new WaitForSecondsRealtime(returnDelay);
+
+        if (!Application.CanStreamedLevelBeLoaded(returnSceneName))
+        {
+            Debug.LogError("[ChildHood] 场景没有加入 Build Settings：" + returnSceneName);
+            yield break;
+        }
+
+        SceneManager.LoadScene(returnSceneName);
     }
 
     void ApplyPortrait(int index)

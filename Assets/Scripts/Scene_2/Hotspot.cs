@@ -82,6 +82,11 @@ public class Hotspot : MonoBehaviour
              "结束时会按它们原本的显示/隐藏状态还原。覆盖层自己会被跳过，不用管")]
     public GameObject[] hideWhileShowing;
 
+    [Header("Click Area")]
+    [Tooltip("Multiplier for the auto-generated hit box. 1 = original size, 2 = double size.")]
+    [Min(0.1f)]
+    public float hitAreaScale = 2f;
+
     Collider2D hitArea;
     bool used;
     bool firstStageDone;
@@ -94,6 +99,7 @@ public class Hotspot : MonoBehaviour
 
         // 没有碰撞盒就点不到，这里自动补一个：有 SpriteRenderer 就按图片大小给
         var box = gameObject.AddComponent<BoxCollider2D>();
+        float scale = hitAreaScale > 0f ? hitAreaScale : 2f;
 
         float width = 1f;
         float height = 1f;
@@ -104,11 +110,9 @@ public class Hotspot : MonoBehaviour
             height = renderer.sprite.bounds.size.y;
         }
 
-        box.size = new Vector2(width, height);
+        box.size = new Vector2(width, height) * scale;
         hitArea = box;
-
-        Debug.Log("[Hotspot] " + name + " 上没有 Collider2D，已自动补一个 BoxCollider2D（"
-                  + width + " x " + height + "），记得在 Inspector 里调成刚好盖住那处。", this);
+        Debug.Log("[Hotspot] " + name + " hit area = " + box.size + " (scale " + scale + ")", this);
     }
 
     void Update()
@@ -304,6 +308,22 @@ public class Hotspot : MonoBehaviour
         }
 
         group.alpha = target;
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        float width = 1f;
+        float height = 1f;
+        var renderer = GetComponent<SpriteRenderer>();
+        if (renderer != null && renderer.sprite != null)
+        {
+            width = renderer.sprite.bounds.size.x;
+            height = renderer.sprite.bounds.size.y;
+        }
+
+        float scale = hitAreaScale > 0f ? hitAreaScale : 2f;
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(transform.position, new Vector3(width * scale, height * scale, 0f));
     }
 
     void OnDrawGizmos()

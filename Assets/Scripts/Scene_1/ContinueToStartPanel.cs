@@ -10,6 +10,8 @@ public class ContinueToStartPanel : BasePanel
     public Button btnContinue;
     public override void Init()
     {
+        AudioManager.Instance.PlayMusic("风声");
+
         btnContinue.interactable = false;
         btnContinue.image.color = new Color(btnContinue.image.color.r, btnContinue.image.color.g, btnContinue.image.color.b, 0f);
         CoroutineRunner.Instance.StartCoroutine(WaitForDialogue());
@@ -24,7 +26,7 @@ public class ContinueToStartPanel : BasePanel
     private IEnumerator WaitForDialogue()
     {
        DialogueSystem.Show(
-            new DialogueLine("Me","Seven days after my grandmother passed away,<pause=0.5> Ireturned to my hometown.")
+            new DialogueLine("Me", "Seven days after my grandmother <b>passed away</b>,<pause=0.5> I returned to my hometown.", 0.8f, 0.94f)
         );
         yield return WaitDialogueEnded();
 

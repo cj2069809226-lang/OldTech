@@ -40,8 +40,8 @@ public class Photo : MonoBehaviour
 
     readonly DialogueLine[] introLines =
     {
-        new DialogueLine("Me", "Mom once told me about her older sister."),
-        new DialogueLine("Me", "Could this be her?"),
+        new DialogueLine("Me", "Mom once told me about her <b>older sister</b>.", 0.85f, 0.95f),
+        new DialogueLine("Me", "<pause=0.3>Could this be her?", 0.8f, 1.02f),
     };
 
     bool introPlaying;
@@ -62,6 +62,8 @@ public class Photo : MonoBehaviour
 
     void Start()
     {
+        AudioManager.Instance.PlayMusic("水滴声");
+
         if (letterPanel != null)
             letterPanel.SetActive(false);
 
@@ -147,8 +149,8 @@ public class Photo : MonoBehaviour
         envelopePlaying = true;
 
         DialogueSystem.Show(
-            new DialogueLine("Envelope Contents", "To my dear grandchild."),
-            new DialogueLine("Envelope Contents", "Read this only after I'm gone.")
+            new DialogueLine("Envelope Contents", "To my dear <b>grandchild</b>.", 0.8f, 0.94f),
+            new DialogueLine("Envelope Contents", "<pause=0.35>Read this only <b>after I'm gone</b>.", 0.75f, 0.9f)
         );
 
         yield return WaitDialogueEnded();

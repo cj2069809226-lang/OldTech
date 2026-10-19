@@ -718,8 +718,8 @@ Camera:
   m_GameObject: {fileID: 1700254914}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -834,35 +834,31 @@ MonoBehaviour:
   playOnStart: 1
   lines:
   - speaker: Aside
-    text: There was an old story in our village.
-    speed: 1
-    pitch: 1
+    text: 'There was an <b>old story</b> in our village.'
+    speed: 0.92
+    pitch: 0.98
     blip: {fileID: 0}
   - speaker: Aside
-    text: Long ago, we had only one photographer.
-    speed: 1
-    pitch: 1
+    text: 'Long ago, we had <b>only one photographer</b>.'
+    speed: 0.9
+    pitch: 0.97
     blip: {fileID: 0}
   - speaker: Aside
-    text: 'Every year, he came to the ancestral hall to take
-
-      portraits.'
-    speed: 1
-    pitch: 1
+    text: 'Every year, he came to the ancestral hall to take <b>portraits</b>.'
+    speed: 0.88
+    pitch: 0.96
     blip: {fileID: 0}
   - speaker: Aside
-    text: 'Many elderly had their portraits taken in advance,
-
-      to be used after
-      their passing'
-    speed: 1
-    pitch: 1
+    text: 'Many elderly had their portraits taken in advance, to be used <b>after their passing</b>.'
+    speed: 0.86
+    pitch: 0.95
     blip: {fileID: 0}
   - speaker: Aside
-    text: "... But one year, something strange happened\u2026"
-    speed: 1
-    pitch: 1
+    text: '<pause=0.35>But one year,<pause=0.2> something <size=115%><b>strange</b></size> happened...<pause=0.6>'
+    speed: 0.78
+    pitch: 0.9
     blip: {fileID: 0}
+  sceneMusicName: 风声
   lineBackgrounds:
   - {fileID: -5343259920873876913, guid: e73fb2044a9694dcc8fe7071f9dd441b, type: 3}
   linePortraits:
