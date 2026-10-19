@@ -15,8 +15,35 @@ EditorBuildSettings:
     path: Assets/Scenes/scene_2.unity
     guid: bef3546b4b69e4388b2ef0f35b80c9fd
   - enabled: 1
-    path: "Assets/Scenes/Props/\u9057\u7167.unity"
-    guid: 9d567eb29e24249a48ffb19ee861c8fb
+    path: Assets/Scenes/Props/ChildHood.unity
+    guid: 2ad3a5217e342d6408f0d19240892836
+  - enabled: 1
+    path: Assets/Scenes/Props/Photo.unity
+    guid: ec2f1d31577076b46b2a4710b5c7cc68
+  - enabled: 1
+    path: Assets/Scenes/scene_3.unity
+    guid: 0a2bf2315257aec41b63e14e1350b91d
+  - enabled: 1
+    path: Assets/Scenes/scene_4.unity
+    guid: afca9af4700bf994f997e65089c93149
+  - enabled: 1
+    path: Assets/Scenes/scene_5.unity
+    guid: 310b38bcf5515514e90d63d03361b280
+  - enabled: 1
+    path: Assets/Scenes/scene_6.unity
+    guid: ee6c7116a9bfee546b750092eb30e305
+  - enabled: 1
+    path: Assets/Scenes/scene_7.unity
+    guid: 05fe97efa6226084286ee4af132d5dc0
+  - enabled: 1
+    path: Assets/Scenes/scene_8.unity
+    guid: d71a0cfb28d097046baa00be9bd2d59f
+  - enabled: 1
+    path: Assets/Scenes/scene_9.unity
+    guid: 959cc5641f86edc4081eabea9ea4f226
+  - enabled: 1
+    path: Assets/Scenes/scene_11.unity
+    guid: a5b8ddfdacb6b034a8a2cca9aec3acce
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
