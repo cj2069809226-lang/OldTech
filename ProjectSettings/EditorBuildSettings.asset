@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Props/ChildHood.unity
     guid: 2ad3a5217e342d6408f0d19240892836
   - enabled: 1
+    path: Assets/Scenes/Props/beforeChildHood.unity
+    guid: 787e034a685144d91851ef8d1f1bb506
+  - enabled: 1
     path: Assets/Scenes/Props/Photo.unity
     guid: ec2f1d31577076b46b2a4710b5c7cc68
   - enabled: 1

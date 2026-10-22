@@ -23,7 +23,7 @@ public class CheckPhoto : MonoBehaviour
         if (wasActive && !nowActive)
         {
             hasLoaded = true;
-            SceneManager.LoadScene("ChildHood");
+            SceneManager.LoadScene("beforeChildHood");
         }
 
         wasActive = nowActive;
