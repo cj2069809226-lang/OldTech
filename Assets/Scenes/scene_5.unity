@@ -263,8 +263,8 @@ MonoBehaviour:
   linePortraits:
   - {fileID: 0}
   - {fileID: -7391809670129946668, guid: c55b1b472fbaf419cace4b5dce5bd8d2, type: 3}
-  - {fileID: -9188070801501695944, guid: 761359e4050a1244eaf545a08f650029, type: 3}
-  - {fileID: -9188070801501695944, guid: 761359e4050a1244eaf545a08f650029, type: 3}
+  - {fileID: 8241063192178853629, guid: b27df3f63a6b83440956ad90b846bec6, type: 3}
+  - {fileID: 8241063192178853629, guid: b27df3f63a6b83440956ad90b846bec6, type: 3}
   hideCharacterWhenNoPortrait: 1
   sceneMusicName: "\u96F7\u96E8\u58F0"
   lineSfxNames: []
@@ -555,7 +555,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4263446246654506797, guid: 7310577085445e24db6e75c1d722452e, type: 3}
+  m_Sprite: {fileID: 8241063192178853629, guid: b27df3f63a6b83440956ad90b846bec6, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

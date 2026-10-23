@@ -31,7 +31,7 @@ public class BeforeChildHoodController : MonoBehaviour
 
         if (blackScreen != null) blackScreen.SetActive(true);
         if (charactersRoot != null) charactersRoot.SetActive(true);
-        if (memoryText != null) memoryText.text = "进入童年回忆";
+        if (memoryText != null) memoryText.text = "CHILDHOOD MEMORY";
 
         yield return new WaitForSecondsRealtime(Mathf.Max(0.1f, titleHold));
 

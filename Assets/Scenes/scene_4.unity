@@ -350,7 +350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aa24ae9b1e3a3f843910836faf18817c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 788358bbdaa70774894544c851f79d0b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -703,31 +703,31 @@ MonoBehaviour:
   playOnStart: 1
   lines:
   - speaker: Aside
-    text: 'That day, an old man <b>sat alone</b> for his portrait.'
+    text: That day, an old man <b>sat alone</b> for his portrait.
     speed: 0.88
     pitch: 0.96
     blip: {fileID: 0}
   - speaker: Aside
-    text: '<pause=0.3>But when the photograph was developed, a <size=116%><b>child</b></size> appeared behind him.'
+    text: <pause=0.3>But when the photograph was developed, a <size=116%><b>child</b></size>
+      appeared behind him.
     speed: 0.8
     pitch: 0.92
     blip: {fileID: 0}
   - speaker: Aside
-    text: 'Her body was almost <size=116%><b>transparent</b></size>.'
+    text: Her body was almost <size=116%><b>transparent</b></size>.
     speed: 0.72
     pitch: 0.88
     blip: {fileID: 0}
   - speaker: Aside
-    text: 'The photographer insisted there had been <b>no child</b> in the frame.'
+    text: The photographer insisted there had been <b>no child</b> in the frame.
     speed: 0.9
     pitch: 0.95
     blip: {fileID: 0}
   - speaker: Aside
-    text: '<pause=0.5><b>No one believed him.</b>'
+    text: <pause=0.5><b>No one believed him.</b>
     speed: 0.8
     pitch: 0.9
     blip: {fileID: 0}
-  sceneMusicName: 增加恐怖氛围可用
   lineBackgrounds:
   - {fileID: -239189868269627594, guid: 2a3922c9945231e4983b0a3425fa9056, type: 3}
   - {fileID: -7391809670129946668, guid: c55b1b472fbaf419cace4b5dce5bd8d2, type: 3}
@@ -738,9 +738,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 1481016991683885450, guid: 36f831c00478df34ca0642b19ab088a1, type: 3}
+  - {fileID: 21300000, guid: 788358bbdaa70774894544c851f79d0b, type: 3}
   - {fileID: 0}
   hideCharacterWhenNoPortrait: 1
+  sceneMusicName: "\u589E\u52A0\u6050\u6016\u6C1B\u56F4\u53EF\u7528"
+  lineSfxNames: []
+  lineSfxVolume: 0.9
   backgroundImage: {fileID: 2043619781}
   characterImage: {fileID: 1355755569}
   nextSceneName: scene_5
